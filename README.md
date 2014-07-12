@@ -5,15 +5,19 @@ Dockerfiles for building a storm cluster. Inspired by [https://github.com/ptgoet
 
 The images are available directly from [https://index.docker.io](https://index.docker.io)
 
+##Pre-Requisites
+
+- install fig [http://orchardup.github.io/fig/install.html](http://orchardup.github.io/fig/install.html)
+
 ##Usage
 
 Start a cluser:
 
-- ```start-storm.sh```
+- ```fig up```
 
 Destroy a cluster:
 
-- ```destroy-storm.sh```
+- ```fig stop```
 
 ##Building
 
