@@ -38,7 +38,7 @@ Take a look at fig.yml:
     
 This tells Docker to expose the Docker UI container's port 8080 as port 49080 on the host<br/>
 
-If you are running docker natively can use localhost. If you're using boot2docker, then do:
+If you are running docker natively you can use localhost. If you're using boot2docker, then do:
 
     $ boot2docker ip
     The VM's Host only interface IP address is: 192.168.59.103
