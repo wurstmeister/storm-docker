@@ -7,7 +7,7 @@ The images are available directly from [https://index.docker.io](https://index.d
 
 ##Pre-Requisites
 
-- install fig [http://orchardup.github.io/fig/install.html](http://orchardup.github.io/fig/install.html)
+- install fig [http://www.fig.sh/install.html](http://www.fig.sh/install.html)
 
 ##Usage
 
