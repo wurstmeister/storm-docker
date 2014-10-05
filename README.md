@@ -11,7 +11,7 @@ The images are available directly from [https://index.docker.io](https://index.d
 
 ##Usage
 
-Start a cluser:
+Start a cluster:
 
 - ```fig up```
 
