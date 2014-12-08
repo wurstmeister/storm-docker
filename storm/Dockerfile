@@ -2,8 +2,9 @@ FROM wurstmeister/base
 
 MAINTAINER Wurstmeister 
 
-RUN wget -q -O - http://people.apache.org/~ptgoetz/apache-storm-0.9.3-rc1/apache-storm-0.9.3-rc1.tar.gz | tar -xzf - -C /opt
-ENV STORM_HOME /opt/apache-storm-0.9.3-rc1
+RUN wget -q -O - http://mirrors.sonic.net/apache/storm/apache-storm-0.9.3/apache-storm-0.9.3.tar.gz | tar -xzf - -C /opt
+
+ENV STORM_HOME /opt/apache-storm-0.9.3
 RUN groupadd storm; useradd --gid storm --home-dir /home/storm --create-home --shell /bin/bash storm; chown -R storm:storm $STORM_HOME; mkdir /var/log/storm ; chown -R storm:storm /var/log/storm
 
 RUN ln -s $STORM_HOME/bin/storm /usr/bin/storm
