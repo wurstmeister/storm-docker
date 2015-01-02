@@ -1,4 +1,4 @@
-FROM wurstmeister/storm
+FROM wurstmeister/storm:0.9.3
 MAINTAINER Wurstmeister
 
 RUN /usr/bin/config-supervisord.sh nimbus 
