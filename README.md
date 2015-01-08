@@ -60,3 +60,9 @@ Following the example above, after discovering the nimbus host IP (could be loca
 
     storm jar target/your-topology-fat-jar.jar com.your.package.AndTopology topology-name -c nimbus.host=192.168.59.103 -c nimbus.thrift.port=49627
 
+### How can I connect to one of the containers?
+Find the forwarded ssh port for the container you want to which you wish to connect (use `fig ps`)     
+    	
+    $ ssh root@`boot2docker ip` -p $CONTAINER_PORT 
+ 
+The password is 'wurstmeister' (from: https://registry.hub.docker.com/u/wurstmeister/base/dockerfile/).
