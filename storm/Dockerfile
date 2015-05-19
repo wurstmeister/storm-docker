@@ -1,4 +1,4 @@
-FROM wurstmeister/base
+FROM wurstmeister/base:latest
 
 MAINTAINER Wurstmeister 
 
