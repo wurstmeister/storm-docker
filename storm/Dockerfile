@@ -1,7 +1,8 @@
 FROM wurstmeister/base
 
 MAINTAINER Wurstmeister 
-
+RUN apt-get update; apt-get install -y unzip openjdk-8-jre-headless
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN wget -q -O - http://mirrors.sonic.net/apache/storm/apache-storm-0.9.4/apache-storm-0.9.4.tar.gz | tar -xzf - -C /opt
 
 ENV STORM_HOME /opt/apache-storm-0.9.4
