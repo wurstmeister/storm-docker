@@ -5,11 +5,11 @@ Dockerfiles for building a storm cluster. Inspired by [https://github.com/ptgoet
 
 The images are available directly from [https://index.docker.io](https://index.docker.io)
 
-##Pre-Requisites
+## Pre-Requisites
 
 - install docker-compose [http://docs.docker.com/compose/install/](http://docs.docker.com/compose/install/)
 
-##Usage
+## Usage
 
 Start a cluster:
 
@@ -23,11 +23,11 @@ Add more supervisors:
 
 - ```docker-compose scale supervisor=3```
 
-##Building
+## Building
 
 - ```rebuild.sh```
 
-##FAQ
+## FAQ
 ### How can I access Storm UI from my host?
 Take a look at docker-compose.yml:
 
